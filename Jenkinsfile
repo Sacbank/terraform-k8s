@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout SCM'){
             steps{
                 script{
-                    //Generate  using pipeline syntax
+                     git branch: 'main', url: "https://github.com/Sacbank/terraform-k8s.git"
                 }
             }
         }
