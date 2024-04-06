@@ -38,6 +38,7 @@ pipeline {
             steps{
                 script{
                          sh 'terraform plan'
+                }
                     input(message: "Are you sure to proceed?", ok: "proceed")
                 }
             }
